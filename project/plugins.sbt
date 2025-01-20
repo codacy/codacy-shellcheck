@@ -1,2 +1,2 @@
 addSbtPlugin("com.codacy" % "codacy-sbt-plugin" % "25.2.2")
-addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.10.4")
+addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.9.1")
