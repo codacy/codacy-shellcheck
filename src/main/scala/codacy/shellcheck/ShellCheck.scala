@@ -1,20 +1,18 @@
 package codacy.shellcheck
 
 import java.io.{File => JFile}
-
-import better.files._
 import com.codacy.plugins.api._
 import com.codacy.plugins.api.results.{Pattern, Result, Tool}
 import com.codacy.tools.scala.seed.utils._
 import com.codacy.tools.scala.seed.utils.ToolHelper._
-import play.api.libs.json.Json
+import play.api.libs.json.{Json, OFormat}
 
 import scala.util.Try
 
 case class ShellCheckResult(file: String, line: Int, column: Int, level: String, code: Int, message: String)
 
 object ShellCheckResult {
-  implicit val shellCheckResult = Json.format[ShellCheckResult]
+  implicit val shellCheckResult: OFormat[ShellCheckResult] = Json.format[ShellCheckResult]
 }
 
 object ShellCheck extends Tool {
