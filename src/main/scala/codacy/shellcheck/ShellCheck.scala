@@ -1,6 +1,8 @@
 package codacy.shellcheck
 
 import java.io.{File => JFile}
+
+import better.files._
 import com.codacy.plugins.api._
 import com.codacy.plugins.api.results.{Pattern, Result, Tool}
 import com.codacy.tools.scala.seed.utils._
