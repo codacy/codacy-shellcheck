@@ -16,8 +16,8 @@
   },
   {
     "patternId": "SC1007",
-    "title": "Remove space after `=` if trying to assign a value (or for empty string, use `var=''` ... ).",
-    "description": "Remove space after `=` if trying to assign a value (or for empty string, use `var=''` ... )."
+    "title": "Remove space after `=` if trying to assign a value (or for empty string, use `var=\"\"` ... ).",
+    "description": "Remove space after `=` if trying to assign a value (or for empty string, use `var=\"\"` ... )."
   },
   {
     "patternId": "SC1008",
@@ -56,8 +56,8 @@
   },
   {
     "patternId": "SC1018",
-    "title": "This is a unicode non-breaking space. Delete it and retype as space.",
-    "description": "This is a unicode non-breaking space. Delete it and retype as space."
+    "title": "This is a Unicode non-breaking space. Delete it and retype as space.",
+    "description": "This is a Unicode non-breaking space. Delete it and retype as space."
   },
   {
     "patternId": "SC1019",
@@ -133,11 +133,6 @@
     "patternId": "SC1041",
     "title": "Found `eof` further down, but not on a separate line.",
     "description": "Found `eof` further down, but not on a separate line."
-  },
-  {
-    "patternId": "SC1042",
-    "title": "Close matches include `-eof` (!= `eof`).",
-    "description": "Close matches include `-eof` (!= `eof`)."
   },
   {
     "patternId": "SC1043",
@@ -251,8 +246,8 @@
   },
   {
     "patternId": "SC1065",
-    "title": "Trying to declare parameters? Don't. Use `()` and refer to params as `$1`, `$2`, ..",
-    "description": "Trying to declare parameters? Don't. Use `()` and refer to params as `$1`, `$2`, .."
+    "title": "Trying to declare parameters? Don't. Use `()` and refer to params as `$1`, `$2`, …",
+    "description": "Trying to declare parameters? Don't. Use `()` and refer to params as `$1`, `$2`, …"
   },
   {
     "patternId": "SC1066",
@@ -306,8 +301,8 @@
   },
   {
     "patternId": "SC1078",
-    "title": "Did you forget to close this double quoted string?",
-    "description": "Did you forget to close this double quoted string?"
+    "title": "Did you forget to close this double-quoted string?",
+    "description": "Did you forget to close this double-quoted string?"
   },
   {
     "patternId": "SC1079",
@@ -361,8 +356,8 @@
   },
   {
     "patternId": "SC1090",
-    "title": "Can't follow non-constant source. Use a directive to specify location.",
-    "description": "Can't follow non-constant source. Use a directive to specify location."
+    "title": "Can't follow non-constant source. Use a directive to specify location",
+    "description": "Can't follow non-constant source. Use a directive to specify location"
   },
   {
     "patternId": "SC1091",
@@ -401,8 +396,8 @@
   },
   {
     "patternId": "SC1100",
-    "title": "This is a unicode dash. Delete and retype as ASCII minus.",
-    "description": "This is a unicode dash. Delete and retype as ASCII minus."
+    "title": "This is a Unicode dash. Delete and retype as ASCII minus.",
+    "description": "This is a Unicode dash. Delete and retype as ASCII minus."
   },
   {
     "patternId": "SC1101",
@@ -451,18 +446,18 @@
   },
   {
     "patternId": "SC1110",
-    "title": "This is a unicode quote. Delete and retype it (or quote to make literal).",
-    "description": "This is a unicode quote. Delete and retype it (or quote to make literal)."
+    "title": "This is a Unicode quote. Delete and retype it (or quote to make literal).",
+    "description": "This is a Unicode quote. Delete and retype it (or quote to make literal)."
   },
   {
     "patternId": "SC1111",
-    "title": "This is a unicode quote. Delete and retype it (or ignore/singlequote for literal).",
-    "description": "This is a unicode quote. Delete and retype it (or ignore/singlequote for literal)."
+    "title": "This is a Unicode quote. Delete and retype it (or ignore/singlequote for literal).",
+    "description": "This is a Unicode quote. Delete and retype it (or ignore/singlequote for literal)."
   },
   {
     "patternId": "SC1112",
-    "title": "This is a unicode quote. Delete and retype it (or ignore/doublequote for literal).",
-    "description": "This is a unicode quote. Delete and retype it (or ignore/doublequote for literal)."
+    "title": "This is a Unicode quote. Delete and retype it (or ignore/doublequote for literal).",
+    "description": "This is a Unicode quote. Delete and retype it (or ignore/doublequote for literal)."
   },
   {
     "patternId": "SC1113",
@@ -586,8 +581,8 @@
   },
   {
     "patternId": "SC1138",
-    "title": "Shells are space sensitive. Use `< <(cmd)`, not `<< (cmd)`.",
-    "description": "Shells are space sensitive. Use `< <(cmd)`, not `<< (cmd)`."
+    "title": "Remove spaces between (( in arithmetic for loop.",
+    "description": "Remove spaces between (( in arithmetic for loop."
   },
   {
     "patternId": "SC1139",
@@ -751,8 +746,8 @@
   },
   {
     "patternId": "SC2026",
-    "title": "This word is outside of quotes. Did you intend to `'nest '\"'single quotes'\"'` instead'?",
-    "description": "This word is outside of quotes. Did you intend to `'nest '\"'single quotes'\"'` instead'?"
+    "title": "This word is outside of quotes. Did you intend to `'nest '\"'single quotes'\"'` instead?",
+    "description": "This word is outside of quotes. Did you intend to `'nest '\"'single quotes'\"'` instead?"
   },
   {
     "patternId": "SC2027",
@@ -901,8 +896,8 @@
   },
   {
     "patternId": "SC2060",
-    "title": "Quote parameters to tr to prevent glob expansion.",
-    "description": "Quote parameters to tr to prevent glob expansion."
+    "title": "Quote parameters to `tr` to prevent glob expansion.",
+    "description": "Quote parameters to `tr` to prevent glob expansion."
   },
   {
     "patternId": "SC2061",
@@ -931,8 +926,8 @@
   },
   {
     "patternId": "SC2066",
-    "title": "Since you double quoted this, it will not word split, and the loop will only run once.",
-    "description": "Since you double quoted this, it will not word split, and the loop will only run once."
+    "title": "Since you double-quoted this, it will not word split, and the loop will only run once.",
+    "description": "Since you double-quoted this, it will not word split, and the loop will only run once."
   },
   {
     "patternId": "SC2067",
@@ -1236,8 +1231,8 @@
   },
   {
     "patternId": "SC2128",
-    "title": "Expanding an array without an index only gives the first element.",
-    "description": "Expanding an array without an index only gives the first element."
+    "title": "Expanding an array without an index only gives the element in the index 0.",
+    "description": "Expanding an array without an index only gives the element in the index 0."
   },
   {
     "patternId": "SC2129",
@@ -1376,8 +1371,8 @@
   },
   {
     "patternId": "SC2166",
-    "title": "Prefer `[ p ] && [ q ]` as `[ p -a q ]` is not well defined.",
-    "description": "Prefer `[ p ] && [ q ]` as `[ p -a q ]` is not well defined."
+    "title": "Prefer `[ p ] && [ q ]` as `[ p -a q ]` is not well-defined.",
+    "description": "Prefer `[ p ] && [ q ]` as `[ p -a q ]` is not well-defined."
   },
   {
     "patternId": "SC2167",
@@ -1401,8 +1396,8 @@
   },
   {
     "patternId": "SC2172",
-    "title": "Trapping signals by number is not well defined. Prefer signal names.",
-    "description": "Trapping signals by number is not well defined. Prefer signal names."
+    "title": "Trapping signals by number is not well-defined. Prefer signal names.",
+    "description": "Trapping signals by number is not well-defined. Prefer signal names."
   },
   {
     "patternId": "SC2173",
@@ -1456,8 +1451,8 @@
   },
   {
     "patternId": "SC2183",
-    "title": "This format string has 2 variables, but is passed 1 arguments.",
-    "description": "This format string has 2 variables, but is passed 1 arguments."
+    "title": "This format string has 2 variables, but is passed 1 argument.",
+    "description": "This format string has 2 variables, but is passed 1 argument."
   },
   {
     "patternId": "SC2184",
@@ -1691,8 +1686,8 @@
   },
   {
     "patternId": "SC2231",
-    "title": "Quote expansions in this `for` loop glob to prevent wordsplitting, e.g. `\"$dir\"/*.txt` .",
-    "description": "Quote expansions in this `for` loop glob to prevent wordsplitting, e.g. `\"$dir\"/*.txt` ."
+    "title": "Quote expansions in this `for` loop glob to prevent word splitting, e.g. `\"${dir}\"/*.txt`.",
+    "description": "Quote expansions in this `for` loop glob to prevent word splitting, e.g. `\"${dir}\"/*.txt`."
   },
   {
     "patternId": "SC2232",
@@ -1791,8 +1786,8 @@
   },
   {
     "patternId": "SC2251",
-    "title": "This `!` is not on a condition and skips errexit. Use `&& exit 1` instead, or make sure `$?` is checked.",
-    "description": "This `!` is not on a condition and skips errexit. Use `&& exit 1` instead, or make sure `$?` is checked."
+    "title": "This `!` is not on a condition and skips errexit. Add `|| exit 1` or make sure `$?` is checked.",
+    "description": "This `!` is not on a condition and skips errexit. Add `|| exit 1` or make sure `$?` is checked."
   },
   {
     "patternId": "SC2252",
@@ -1823,6 +1818,11 @@
     "patternId": "SC2257",
     "title": "Arithmetic modifications in command redirections may be discarded. Do them separately.",
     "description": "Arithmetic modifications in command redirections may be discarded. Do them separately."
+  },
+  {
+    "patternId": "SC2258",
+    "title": "The trailing comma is part of the value, not a separator. Delete or quote it.",
+    "description": "The trailing comma is part of the value, not a separator. Delete or quote it."
   },
   {
     "patternId": "SC2259",
@@ -2150,6 +2150,21 @@
     "description": "`a[(x)]` is the same as `a[x]`. Prefer not wrapping in additional parentheses."
   },
   {
+    "patternId": "SC2324",
+    "title": "var+=1 will append, not increment. Use (( var += 1 )), declare -i var, or quote number to silence.",
+    "description": "var+=1 will append, not increment. Use (( var += 1 )), declare -i var, or quote number to silence."
+  },
+  {
+    "patternId": "SC2325",
+    "title": "Multiple ! in front of pipelines are a bash/ksh extension. Use only 0 or 1.",
+    "description": "Multiple ! in front of pipelines are a bash/ksh extension. Use only 0 or 1."
+  },
+  {
+    "patternId": "SC2326",
+    "title": "! is not allowed in the middle of pipelines. Use command group as in `cmd | { ! cmd; }` if necessary.",
+    "description": "! is not allowed in the middle of pipelines. Use command group as in `cmd | { ! cmd; }` if necessary."
+  },
+  {
     "patternId": "SC3001",
     "title": "In POSIX sh, process substitution is undefined.",
     "description": "In POSIX sh, process substitution is undefined."
@@ -2261,8 +2276,8 @@
   },
   {
     "patternId": "SC3023",
-    "title": "In POSIX sh, FDs outside of 0-9 are undefined.",
-    "description": "In POSIX sh, FDs outside of 0-9 are undefined."
+    "title": "In POSIX sh, FDs outside 0-9 are undefined.",
+    "description": "In POSIX sh, FDs outside 0-9 are undefined."
   },
   {
     "patternId": "SC3024",
