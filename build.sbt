@@ -2,7 +2,7 @@ organization := "com.codacy"
 
 name := "codacy-shellcheck"
 
-scalaVersion := "2.13.3"
+scalaVersion := "2.13.16"
 
 libraryDependencies += "com.codacy" %% "codacy-engine-scala-seed" % "4.1.1"
 
