@@ -1,6 +1,6 @@
 {
   "name": "shellcheck",
-  "version": "v0.9.0",
+  "version": "0.10.0",
   "patterns": [
     {
       "patternId": "SC1000",
@@ -160,12 +160,6 @@
     },
     {
       "patternId": "SC1041",
-      "level": "Error",
-      "category": "CodeStyle",
-      "enabled": false
-    },
-    {
-      "patternId": "SC1042",
       "level": "Error",
       "category": "CodeStyle",
       "enabled": false
@@ -2197,6 +2191,12 @@
       "enabled": false
     },
     {
+      "patternId": "SC2258",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "enabled": false
+    },
+    {
       "patternId": "SC2259",
       "level": "Error",
       "category": "CodeStyle",
@@ -2583,6 +2583,24 @@
     {
       "patternId": "SC2323",
       "level": "Info",
+      "category": "CodeStyle",
+      "enabled": false
+    },
+    {
+      "patternId": "SC2324",
+      "level": "Warning",
+      "category": "CodeStyle",
+      "enabled": false
+    },
+    {
+      "patternId": "SC2325",
+      "level": "Error",
+      "category": "CodeStyle",
+      "enabled": false
+    },
+    {
+      "patternId": "SC2326",
+      "level": "Error",
       "category": "CodeStyle",
       "enabled": false
     },
