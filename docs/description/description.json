@@ -1246,8 +1246,8 @@
   },
   {
     "patternId": "SC2140",
-    "title": "Word is of the form `\"A\"B\"C\"` (B indicated). Did you mean `\"ABC\"` or `\"A\\\\\"B\\\\\"C\"`?",
-    "description": "Word is of the form `\"A\"B\"C\"` (B indicated). Did you mean `\"ABC\"` or `\"A\\\\\"B\\\\\"C\"`?"
+    "title": "Word is of the form `\"A\"B\"C\"` (B indicated). Did you mean `\"ABC\"` or `\"A\\\"B\\\"C\"`?",
+    "description": "Word is of the form `\"A\"B\"C\"` (B indicated). Did you mean `\"ABC\"` or `\"A\\\"B\\\"C\"`?"
   },
   {
     "patternId": "SC2141",
