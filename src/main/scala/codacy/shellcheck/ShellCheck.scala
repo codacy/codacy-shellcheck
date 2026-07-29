@@ -35,7 +35,18 @@ object ShellCheck extends Tool {
         paths.map(_.toString).toList
       }
 
-      val command = List("shellcheck", "-x", "-f", "json") ++ filesToLint
+        val baseCommand = List("shellcheck", "-x", "-f", "json") ++ filesToLint
+        val command = if (configuration.isEmpty) {
+        val configFile = File(source.path) / ".shellcheckrc"
+      if (configFile.exists) {
+          baseCommand ++ List("--rcfile", configFile.pathAsString)
+        } else {
+          baseCommand
+        }
+      } else {
+        baseCommand :+ "--norc"        // Using the UI patterns
+      }
+            
       CommandRunner.exec(command, Option(new JFile(source.path.toString))) match {
         case Right(resultFromTool) =>
           parseToolResult(resultFromTool.stdout, source, configuration)

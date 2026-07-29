@@ -18,6 +18,20 @@ docker run -it -v $srcDir:/src  <DOCKER_NAME>:<DOCKER_VERSION>
 
 and $srcDir must contain a valid `.codacy.json` configuration
 
+## ShellCheck Configuration
+
+This wrapper supports ShellCheck configuration files. You can place a `.shellcheckrc` file in your repository root to configure ShellCheck behavior.
+
+### Example `.shellcheckrc`
+
+```
+disable=SC2086,SC2181
+enable=optional
+external-sources=true
+```
+
+For more information about ShellCheck configuration options, visit the [ShellCheck wiki](https://www.shellcheck.net/)
+
 ## Docs
 
 [Docker Docs](https://support.codacy.com/hc/en-us/articles/207994725-Tool-Developer-Guide)
