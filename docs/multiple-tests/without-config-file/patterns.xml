@@ -2,7 +2,6 @@
 
 <module name="root">
     <module name="SC2001" />
-    <module name="SC2002" />
     <module name="SC2003" />
     <module name="SC2308" />
 </module>
