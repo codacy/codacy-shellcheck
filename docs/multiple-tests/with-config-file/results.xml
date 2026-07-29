@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<checkstyle version="4.3">
+    <file name="SC2001.sh">
+        <error source="SC2001" line="4" message="See if you can use ${variable//search/replace} instead." severity="info" />
+    </file>
+    <file name="SC2003.sh">
+        <error source="SC2003" line="4" message="expr is antiquated. Consider rewriting this using $((..)), ${} or [[ ]]." severity="info" />
+        <error source="SC2034" line="8" message="i appears unused. Verify use (or export if used externally)." severity="warning" />
+        <error source="SC2034" line="9" message="l appears unused. Verify use (or export if used externally)." severity="warning" />
+    </file>
+</checkstyle>

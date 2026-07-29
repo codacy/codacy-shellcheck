@@ -96,8 +96,8 @@
   },
   {
     "patternId": "SC1034",
-    "title": "Test expression was opened with double `[` but closed with single `]]`. Make sure they match.",
-    "description": "Test expression was opened with double `[` but closed with single `]]`. Make sure they match."
+    "title": "Test expression was opened with single `[` but closed with double `]]`. Make sure they match.",
+    "description": "Test expression was opened with single `[` but closed with double `]]`. Make sure they match."
   },
   {
     "patternId": "SC1035",
@@ -335,6 +335,11 @@
     "description": "Use `#!`, not `!#`, for the shebang."
   },
   {
+    "patternId": "SC1085",
+    "title": "Did you forget to move the ;; after extending this case item?",
+    "description": "Did you forget to move the ;; after extending this case item?"
+  },
+  {
     "patternId": "SC1086",
     "title": "Don't use `$` on the iterator name in for loops.",
     "description": "Don't use `$` on the iterator name in for loops."
@@ -566,8 +571,8 @@
   },
   {
     "patternId": "SC1134",
-    "title": "Error parsing `shellcheckrc`:",
-    "description": "Error parsing `shellcheckrc`:"
+    "title": "Error parsing `shellcheckrc`",
+    "description": "Error parsing `shellcheckrc`"
   },
   {
     "patternId": "SC1135",
@@ -1856,13 +1861,13 @@
   },
   {
     "patternId": "SC2265",
-    "title": "Use && for logical AND. Single & will background and return true.",
-    "description": "Use && for logical AND. Single & will background and return true."
+    "title": "Use `&&` for logical AND. Single `&` will background and return true.",
+    "description": "Use `&&` for logical AND. Single `&` will background and return true."
   },
   {
     "patternId": "SC2266",
-    "title": "Use && for logical AND. Single & will background and return true.",
-    "description": "Use && for logical AND. Single & will background and return true."
+    "title": "Use `||` for logical OR. Single `|` will pipe.",
+    "description": "Use `||` for logical OR. Single `|` will pipe."
   },
   {
     "patternId": "SC2267",
@@ -2446,12 +2451,17 @@
   },
   {
     "patternId": "SC3059",
-    "title": "Case modification is not supported in dash and undefined in POSIX sh.",
-    "description": "Case modification is not supported in dash and undefined in POSIX sh."
+    "title": "In POSIX sh, case modification is undefined.",
+    "description": "In POSIX sh, case modification is undefined."
   },
   {
     "patternId": "SC3060",
     "title": "In POSIX sh, string replacement is undefined.",
     "description": "In POSIX sh, string replacement is undefined."
+  },
+  {
+    "patternId": "SC3061",
+    "title": "In POSIX sh, `read` without a variable is undefined.",
+    "description": "In POSIX sh, `read` without a variable is undefined."
   }
 ]

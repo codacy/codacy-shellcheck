@@ -405,6 +405,12 @@
       "enabled": false
     },
     {
+      "patternId": "SC1085",
+      "level": "Error",
+      "category": "CodeStyle",
+      "enabled": false
+    },
+    {
       "patternId": "SC1086",
       "level": "Error",
       "category": "CodeStyle",
@@ -2949,6 +2955,12 @@
     {
       "patternId": "SC3060",
       "level": "Info",
+      "category": "CodeStyle",
+      "enabled": false
+    },
+    {
+      "patternId": "SC3061",
+      "level": "Warning",
       "category": "CodeStyle",
       "enabled": false
     }

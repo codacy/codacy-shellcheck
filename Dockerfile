@@ -1,6 +1,6 @@
-FROM alpine:3.21.3 as base
+FROM alpine:3.23 AS base
 
-ARG SHELLCHECK_VERSION=0.10.0
+ARG SHELLCHECK_VERSION=0.11.0
 
 RUN apk add --no-cache bash
 
@@ -11,7 +11,7 @@ RUN export EXTRACTED_DIR_NAME=shellcheck-v$SHELLCHECK_VERSION && \
   mv $EXTRACTED_DIR_NAME/shellcheck /usr/bin && \
   rm -rf $EXTRACTED_DIR_NAME $ARCHIVE_NAME
 
-FROM base as dev
+FROM base AS dev
 
 RUN apk add --no-cache openjdk11
 COPY docs /docs
