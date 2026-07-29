@@ -1,6 +1,6 @@
-FROM alpine:3.21.3 AS base
+FROM alpine:3.23 AS base
 
-ARG SHELLCHECK_VERSION=0.10.0
+ARG SHELLCHECK_VERSION=0.11.0
 
 RUN apk add --no-cache bash
 
