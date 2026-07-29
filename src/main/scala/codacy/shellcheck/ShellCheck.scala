@@ -36,16 +36,13 @@ object ShellCheck extends Tool {
       }
 
         val baseCommand = List("shellcheck", "-x", "-f", "json") ++ filesToLint
-        val command = if (configuration.isEmpty) {
-        val configFile = File(source.path) / ".shellcheckrc"
-      if (configFile.exists) {
-          baseCommand ++ List("--rcfile", configFile.pathAsString)
-        } else {
-          baseCommand
-        }
-      } else {
-        baseCommand :+ "--norc"        // Using the UI patterns
-      }
+        val command = 
+          if (configuration == None) {
+            val configFile = File(source.path) / ".shellcheckrc"
+              baseCommand ++ List("--rcfile", configFile.pathAsString)
+          } else {
+            baseCommand :+ "--norc"        // Using the UI patterns
+          }
             
       CommandRunner.exec(command, Option(new JFile(source.path.toString))) match {
         case Right(resultFromTool) =>
