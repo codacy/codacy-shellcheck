@@ -3,10 +3,6 @@
     <file name="SC2001.sh">
         <error source="SC2001" line="4" message="See if you can use ${variable//search/replace} instead." severity="info" />
     </file>
-    <file name="SC2002.sh">
-        <error source="SC2002" line="4" message="Useless cat. Consider &apos;cmd &lt; file | ..&apos; or &apos;cmd file | ..&apos; instead." severity="info" />
-        <error source="SC2002" line="6" message="Useless cat. Consider &apos;cmd &lt; file | ..&apos; or &apos;cmd file | ..&apos; instead." severity="info" />
-    </file>
     <file name="SC2003.sh">
         <error source="SC2003" line="4" message="expr is antiquated. Consider rewriting this using $((..)), ${} or [[ ]]." severity="info" />
         <error source="SC2308" line="6" message="'expr length' has unspecified results. Prefer ${#var}." severity="info" />

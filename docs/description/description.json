@@ -96,8 +96,8 @@
   },
   {
     "patternId": "SC1034",
-    "title": "Test expression was opened with double `[` but closed with single `]]`. Make sure they match.",
-    "description": "Test expression was opened with double `[` but closed with single `]]`. Make sure they match."
+    "title": "Test expression was opened with single `[` but closed with double `]]`. Make sure they match.",
+    "description": "Test expression was opened with single `[` but closed with double `]]`. Make sure they match."
   },
   {
     "patternId": "SC1035",
@@ -335,6 +335,11 @@
     "description": "Use `#!`, not `!#`, for the shebang."
   },
   {
+    "patternId": "SC1085",
+    "title": "Did you forget to move the ;; after extending this case item?",
+    "description": "Did you forget to move the ;; after extending this case item?"
+  },
+  {
     "patternId": "SC1086",
     "title": "Don't use `$` on the iterator name in for loops.",
     "description": "Don't use `$` on the iterator name in for loops."
@@ -566,8 +571,8 @@
   },
   {
     "patternId": "SC1134",
-    "title": "Error parsing `shellcheckrc`:",
-    "description": "Error parsing `shellcheckrc`:"
+    "title": "Error parsing `shellcheckrc`",
+    "description": "Error parsing `shellcheckrc`"
   },
   {
     "patternId": "SC1135",
@@ -658,6 +663,11 @@
     "patternId": "SC2007",
     "title": "Use `$((..))` instead of deprecated `$[..]`.",
     "description": "Use `$((..))` instead of deprecated `$[..]`."
+  },
+  {
+    "patternId": "SC2008",
+    "title": "`echo` doesn't read from stdin, are you sure you should be piping to it?",
+    "description": "`echo` doesn't read from stdin, are you sure you should be piping to it?"
   },
   {
     "patternId": "SC2009",
@@ -1856,13 +1866,13 @@
   },
   {
     "patternId": "SC2265",
-    "title": "Use && for logical AND. Single & will background and return true.",
-    "description": "Use && for logical AND. Single & will background and return true."
+    "title": "Use `&&` for logical AND. Single `&` will background and return true.",
+    "description": "Use `&&` for logical AND. Single `&` will background and return true."
   },
   {
     "patternId": "SC2266",
-    "title": "Use && for logical AND. Single & will background and return true.",
-    "description": "Use && for logical AND. Single & will background and return true."
+    "title": "Use `||` for logical OR. Single `|` will pipe.",
+    "description": "Use `||` for logical OR. Single `|` will pipe."
   },
   {
     "patternId": "SC2267",
@@ -2165,6 +2175,51 @@
     "description": "! is not allowed in the middle of pipelines. Use command group as in `cmd | { ! cmd; }` if necessary."
   },
   {
+    "patternId": "SC2327",
+    "title": "This command substitution will be empty because the command's output gets redirected away.",
+    "description": "This command substitution will be empty because the command's output gets redirected away."
+  },
+  {
+    "patternId": "SC2328",
+    "title": "This redirection takes output away from the command substitution.",
+    "description": "This redirection takes output away from the command substitution."
+  },
+  {
+    "patternId": "SC2329",
+    "title": "This function is never invoked. Check usage (or ignored if invoked indirectly).",
+    "description": "This function is never invoked. Check usage (or ignored if invoked indirectly)."
+  },
+  {
+    "patternId": "SC2330",
+    "title": "BusyBox `[[ .. ]]` does not support glob matching. Use a case statement.",
+    "description": "BusyBox `[[ .. ]]` does not support glob matching. Use a case statement."
+  },
+  {
+    "patternId": "SC2331",
+    "title": "For file existence, prefer standard -e over legacy -a.",
+    "description": "For file existence, prefer standard -e over legacy -a."
+  },
+  {
+    "patternId": "SC2332",
+    "title": "[ ! -o opt ] is always true because -o becomes logical OR. Use [[ ]] or ! [ -o opt ].",
+    "description": "[ ! -o opt ] is always true because -o becomes logical OR. Use [[ ]] or ! [ -o opt ]."
+  },
+  {
+    "patternId": "SC2333",
+    "title": "You probably wanted || here, otherwise it's always false.",
+    "description": "You probably wanted || here, otherwise it's always false."
+  },
+  {
+    "patternId": "SC2334",
+    "title": "You probably wanted || here, otherwise it's always false.",
+    "description": "You probably wanted || here, otherwise it's always false."
+  },
+  {
+    "patternId": "SC2335",
+    "title": "Use `[ \"$var\" -ne 1 ]` instead of `[ ! \"$var\" -eq 1 ]`",
+    "description": "Use `[ \"$var\" -ne 1 ]` instead of `[ ! \"$var\" -eq 1 ]`"
+  },
+  {
     "patternId": "SC3001",
     "title": "In POSIX sh, process substitution is undefined.",
     "description": "In POSIX sh, process substitution is undefined."
@@ -2223,11 +2278,6 @@
     "patternId": "SC3012",
     "title": "In POSIX sh, lexicographical `\\<` is undefined.",
     "description": "In POSIX sh, lexicographical `\\<` is undefined."
-  },
-  {
-    "patternId": "SC3013",
-    "title": "In POSIX sh, `-nt` is undefined.",
-    "description": "In POSIX sh, `-nt` is undefined."
   },
   {
     "patternId": "SC3014",
@@ -2446,12 +2496,47 @@
   },
   {
     "patternId": "SC3059",
-    "title": "Case modification is not supported in dash and undefined in POSIX sh.",
-    "description": "Case modification is not supported in dash and undefined in POSIX sh."
+    "title": "In POSIX sh, case modification is undefined.",
+    "description": "In POSIX sh, case modification is undefined."
   },
   {
     "patternId": "SC3060",
     "title": "In POSIX sh, string replacement is undefined.",
     "description": "In POSIX sh, string replacement is undefined."
+  },
+  {
+    "patternId": "SC3061",
+    "title": "In POSIX sh, `read` without a variable is undefined.",
+    "description": "In POSIX sh, `read` without a variable is undefined."
+  },
+  {
+    "patternId": "SC3062",
+    "title": "In POSIX sh, unary -o to check options is undefined.",
+    "description": "In POSIX sh, unary -o to check options is undefined."
+  },
+  {
+    "patternId": "SC3063",
+    "title": "In POSIX sh, test -R and namerefs in general are undefined.",
+    "description": "In POSIX sh, test -R and namerefs in general are undefined."
+  },
+  {
+    "patternId": "SC3064",
+    "title": "In POSIX sh, test -N is undefined.",
+    "description": "In POSIX sh, test -N is undefined."
+  },
+  {
+    "patternId": "SC3065",
+    "title": "In POSIX sh, test -k is undefined.",
+    "description": "In POSIX sh, test -k is undefined."
+  },
+  {
+    "patternId": "SC3066",
+    "title": "In POSIX sh, test -G is undefined.",
+    "description": "In POSIX sh, test -G is undefined."
+  },
+  {
+    "patternId": "SC3067",
+    "title": "In POSIX sh, test -O is undefined.",
+    "description": "In POSIX sh, test -O is undefined."
   }
 ]
