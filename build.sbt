@@ -4,7 +4,10 @@ name := "codacy-shellcheck"
 
 scalaVersion := "2.13.16"
 
-libraryDependencies += "com.codacy" %% "codacy-engine-scala-seed" % "6.1.4"
+libraryDependencies ++= Seq(
+  "com.codacy" %% "codacy-engine-scala-seed" % "6.1.4",
+  "com.github.pathikrit" %% "better-files" % "3.9.2"
+)
 
 enablePlugins(GraalVMNativeImagePlugin)
 
